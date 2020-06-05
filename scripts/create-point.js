@@ -29,12 +29,13 @@ function getcities(event) {
     
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufvalue}/municipios`
-
+    citiyselect.innerHTML = "<option value>Selecione a cidade</option>"
+    citiyselect.disabled = true
     fetch(url)
     .then( res => res.json())
     .then( cities => {
         for( const city of cities ) {
-            citiyselect.innerHTML += `<option value="${city.id}">${city.nome} </option>`
+            citiyselect.innerHTML += `<option value="${city.nome}">${city.nome} </option>`
         }
 
         citiyselect.disabled = false
@@ -44,3 +45,63 @@ function getcities(event) {
 document
     .querySelector("select[name=uf]")
     .addEventListener("change", getcities)
+
+
+
+// items de coleta
+// pegar todos os lis
+const ItemsToCollect = document.querySelectorAll(".items-grid li")
+
+for (const  item of ItemsToCollect) {
+    item.addEventListener("click", handleSelectedItem)
+
+}
+
+const collecteditems = document.querySelector("input[name=items]")
+let selectedItems = []
+
+function handleSelectedItem(event) {
+    // adicionar ou remover uma classe com javascript
+    const itemli = event.target
+
+    itemli.classList.toggle("selected")
+
+    const itemid = itemli.dataset.id
+
+   
+    // verificar se existem itens selecionados
+    // se sim pegar os itens selecionados
+
+    const alreadyselected = selectedItems.findIndex(item => {
+        const itemfound = item == itemid //isso será true ou false
+        return itemfound 
+    })
+    
+    // se já estiver selecionado, retirar da seleção
+
+    if(alreadyselected >= 0) {
+        // tirar da seleção
+        const filtereditems = selectedItems.filter( item => {
+            const itemisdifferent = item != itemid //false
+            return itemisdifferent
+        })
+        selectedItems = filtereditems
+    } else{
+        // adicionar à seleção
+        selectedItems.push(itemid)
+        
+    }
+    
+
+    // se não estiver selecionado, adicionar à seleção
+
+    // atualizar o campo escondido com os itens selecionados
+
+    collecteditems.value = selectedItems
+
+    
+
+
+
+  
+}
