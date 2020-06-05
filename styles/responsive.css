@@ -22,6 +22,14 @@
     
 }
 
+#page-search-results .cards{
+    grid-template-columns: 1fr 1fr;
+}
+
+#page-search-results .cards img{
+    height: 250px;
+}
+
 @media(min-width: 1700px){
     #page-home{
         background-position: 40vw;
