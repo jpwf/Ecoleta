@@ -4,6 +4,15 @@
     }
 }
 
+@media(max-width: 768){
+    #page-home header a{
+        position: center;
+    }
+    #page-home header a span{
+        width: 20px;
+    }
+}
+
 #page-home.content{
     align-items: center;
     text-align: center;
