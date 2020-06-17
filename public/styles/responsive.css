@@ -22,6 +22,9 @@
        transform:translateX(-300%);
         
     }
+    .items-grid{
+        width: 30px;
+    }
 }
 
 #page-home.content{
