@@ -7,9 +7,10 @@
 @media(max-width: 768){
     #page-home header a{
         position: center;
+        height: 5px;
     }
     #page-home header a span{
-        width: 20px;
+        width: 22px;
     }
 }
 
