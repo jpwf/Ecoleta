@@ -4,12 +4,13 @@
     }
 }
 
-@media(max-width: 768){
+@media(max-width: 768px){
     #page-home header a{
-        position: center;
+        position: absolute;
+        height: 5px;
     }
     #page-home header a span{
-        width: 20px;
+        width: 22px;
     }
 }
 
@@ -39,7 +40,7 @@
     height: 250px;
 }
 
-/* para dispositivos com telas menores que 900px
+
 
 #page-create-point .field-group{
     flex-direction: column;
@@ -49,7 +50,7 @@
     margin-left: 0;
 } 
 
-*/
+
 
 @media(min-width: 1700px){
     #page-home{
