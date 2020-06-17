@@ -5,13 +5,13 @@
 }
 
 @media(max-width: 768px){
-    #page-home header a{
+    #page-home header a {
 
         position: absolute;
 
         height: 5px;
     }
-    #page-home header a span{
+    #page-home header a span {
         width: 22px;
     }
 }
