@@ -9,4 +9,3 @@ close.addEventListener("click", () => {
     modal.classList.add("hide")
 
 })
-

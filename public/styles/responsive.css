@@ -1,17 +1,6 @@
 @media(max-width: 900px){
     #page-home{
         background-position-x: 70vw;
-    }  
-}
-
-@media(max-width: 768px){
-    #page-home header a {
-        position: absolute;
-        height: 5px;
-        
-    }
-    #page-home header a span{
-        width:  25px;
     }
 }
 
@@ -21,11 +10,10 @@
 }
 
 #page-home header a {
-   
-    bottom: 48px;
+    
+    bottom: 40px;
     left: 50%;
     transform:translateX(-50%);
-    
     
 }
 
@@ -39,20 +27,20 @@
 }
 
 #page-search-results .cards img{
-    height: 200px;
+    height: 250px;
 }
 
-  /* /* para dispositivos com telas menores que 900px */
+/* para dispositivos com telas menores que 900px
 
- #page-create-point .field-group{
+#page-create-point .field-group{
     flex-direction: column;
 }
 
 #page-create-point .field-group .field + .field{
     margin-left: 0;
-}  
+} 
 
-
+*/
 
 @media(min-width: 1700px){
     #page-home{
