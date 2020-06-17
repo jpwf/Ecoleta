@@ -5,7 +5,9 @@ function populateUfs()  {
 
         .then((res) => { return res.json() })
         .then(states => {
+            
 
+            // busca dos nomes de estado e cidade
             for (const state of states) {
                 ufselect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
 
