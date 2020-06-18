@@ -22,8 +22,13 @@
        transform:translateX(-300%);
         
     }
-    .items-grid{
+    .items-grid {
         width: 30px;
+        grid-template-columns: 1fr 1fr;
+        }
+    .items-grid li{
+        display: grid;
+       padding: 25px 20px 10px;
     }
 
     #page-create-point .field-group{
@@ -75,12 +80,10 @@
     }
 }
 
-
-/* form input,
- form select{
-
-} */
-
-
-
-
+@media(
+    width: 768px){
+        form legend span{
+            transform: translateX(-70%);
+        }
+    }
+    
