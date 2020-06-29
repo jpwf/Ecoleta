@@ -84,6 +84,8 @@ server.get("/search", (req, res) => {
         // pesquisa vazia
         return res.render("search-results.html", { total: 0 })
     }
+
+
     
 
         
@@ -109,6 +111,14 @@ server.get("/search", (req, res) => {
 
 
 
+})
+
+server.get("/adm", (req, res) => {
+    return res.render("adm.html")
+})
+
+server.get("/delete-data", (req, res) => {
+    return res.render("delete-data.html")
 })
 
 // ligar o servidor
