@@ -39,6 +39,16 @@
         margin-left: 0;
     } 
 
+    #page-home header block {
+        display: flex; 
+        position: fixed;
+        transform: translateX(300px);
+        margin-top: 35px;
+    }
+    #page-home header block a span{
+        width: 32px;
+    }
+
 }
 
 #page-home.content{
@@ -101,7 +111,7 @@
             height: 5px;
         }
         #page-home header a span {
-            width: 24px;
+            width: 30px;
         }
         #modal content{
             width: 400px;
@@ -168,3 +178,4 @@
 
 
     } 
+

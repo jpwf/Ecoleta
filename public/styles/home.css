@@ -33,7 +33,7 @@
     
 }
 #page-home header a span{
-    margin-right: 16px;
+    margin-right: 6px;
     display: flex;
 
     background-image: url(../Assets/log-in.svg);
@@ -41,6 +41,21 @@
     width:  20px;
     height: 20px;
    
+}
+
+#page-home header block {
+    margin-left: 16px;
+}
+
+#page-home header block a span{
+   
+    margin-right: 6px;
+    display: flex;
+
+    background-image: url(../Assets/log-in.svg);
+
+    width:  20px;
+    height: 20px;
 }
 
 #page-home main{
