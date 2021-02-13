@@ -25,13 +25,13 @@
 
 }
 
-#modal .header  {
+#modal .header   {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#modal .header a  {
+#modal .header  a  {
     background-image: url("../Assets/x.svg");
 
     width:20px;

@@ -1,0 +1,54 @@
+.login{
+    width:19.7%;
+    height:19.7%;
+    margin-left:38%;
+    margin-top:20%;
+    border: 1px solid black;
+}
+
+.login .usuario input{
+    width:100%;
+    height:50%;
+}
+
+.login .password input{
+    width:100%;
+    height:50%;
+}
+
+.login .send button{
+    width:30%;
+    margin-left:70.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* A partir daqui a estilização vai para a page root */
+
+#page-root div a{
+    display: flex;
+    height: 24px;
+}
+
+#page-root div a span {
+    margin-right: 10px;
+    background-image: url("../Assets/arrow-left.svg");
+
+    width: 20px;
+    height: 24px;
+    display: flex;
+}
+
+#page-root div div2  {
+    display: flex;
+    transform: translateY(500px);
+    right: 50%;
+}
