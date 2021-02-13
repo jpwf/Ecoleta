@@ -1,39 +1,30 @@
-{% extends "layout.html" %}
 
 {% set pageId = "page-adm" %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/modal.css">
-    <link rel="stylesheet" href="/styles/adm.css">
+    <link href="/styles/adm.css" rel="stylesheet">
 {% endblock styles %}
 
-{% block content %}
-        <div>
-            <a href="/">
-                <span></span> 
-                 Voltar para home
-            </a> <br>
-
-            <input type="text" name= "user"> <br>
-            <input type="text" name="passw"> <br>
-            {# <button onclick= teste()> Entrar </button> #}
-        </div>
-
-{% endblock content %}
+<div class="login">
+    <div class="usuario">
+        <input id="user" placeholder="User:"/>
+    </div>
+    <div class="password">
+        <input id="pass" placeholder="Password:"/>
+    </div>
+    <div class="send">
+        <button id="validate" >Send</button>
+    </div>
+</div>
 
 
-<script>
-    
-    {# em fase de testes #}
-    
-    
-    {# function teste(){
-       console.log("hello")
-        }
-     #}
-    // const usuario = "<input type="text" name= "user">"
-    // const senha = "<input type="text" name="passw">"
-    
 
- </script>
+
+
+
+
+
+
+{% block scripts %}
+    <script src="../scripts/adm.js"></script>
+{% endblock scripts %}
