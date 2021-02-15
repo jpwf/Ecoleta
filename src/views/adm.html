@@ -5,10 +5,10 @@
     <link href="/styles/adm.css" rel="stylesheet">
 {% endblock styles %}
 
-<form  name="form">
+<div class="login">
     <div class="usuario">
         <input id="username"  placeholder="User:"/>
-    </form>
+    </div>
     <div class="password">
         <input id="pass" placeholder="Password:"/>
     </div>
@@ -17,7 +17,13 @@
     </div>
 </div>
 
+{% block modal %}
 
+    {% if send %}
+        {%include "partials/blocked.html"%}
+    {% endif %}
+
+{% endblock modal %}
 
 
 
@@ -26,5 +32,5 @@
 
 
 {% block scripts %}
-    <script src="../scripts/adm.js"></script>
+    <script src="/scripts/adm.js"></script>
 {% endblock scripts %}
