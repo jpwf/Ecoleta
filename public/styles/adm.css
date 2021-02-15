@@ -1,4 +1,4 @@
-form{
+.login{
     width:19.7%;
     height:19.7%;
     margin-left:38%;
@@ -6,17 +6,17 @@ form{
     border: 1px solid black;
 }
 
-form .usuario input{
+.login .usuario input{
     width:100%;
     height:50%;
 }
 
-form .password input{
+.login .password input{
     width:100%;
     height:50%;
 }
 
-form .send button{
+.login .send button{
     width:30%;
     margin-left:70.5%;
 }
