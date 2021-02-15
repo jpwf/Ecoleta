@@ -7,7 +7,7 @@ const db = require("./database/db.js")
 
 // confirugrar pasta pública
 server.use(express.static("public"))
-// habilitar p uso do rq.body na nossa aplicação
+// habilitar o uso do rq.body na nossa aplicação
 server.use(express.urlencoded({ extended: true }))
 
 // utilizando template engine
@@ -28,6 +28,7 @@ server.get("/", (req, res) => {
 
 server.get("/create-point", (req, res) => {
     // console.log(req.query)
+    
     return res.render("create-point.html")
 
     // req.query: query strings da nossa url
@@ -117,10 +118,16 @@ server.get("/adm", (req, res) => {
     return res.render("adm.html")
 })
 
-server.get("/delete-data", (req, res) => {
-    return res.render("delete-data.html")
+server.get("/root", (req, res) =>{
+    return res.render("root.html")
 })
 
+server.get("/blocked", (req, res) =>{
+    return res.render("blocked.html")
+})
+
+
+
 // ligar o servidor
-server.listen(4000)
+server.listen(5000)
 
