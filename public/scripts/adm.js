@@ -1,7 +1,7 @@
 const login = {
     user: "jpwf",
-    pass: "cl912222",
-    key: 2511
+    pass: "12345",
+    key: 4321
         }
 
 function authenticated(){
@@ -26,7 +26,7 @@ button = document.getElementById("sendb")
 
 
     
-button.addEventListener("click" ,(req,res) => {
+button.addEventListener("click" ,function(){
     var usuario = document.getElementById("username").value;
     var senha = document.getElementById("pass").value;
     if(usuario==login.user && senha==login.pass){
