@@ -21,8 +21,7 @@
     margin-left:70.5%;
 }
 
-
-
+    
 
 
 
@@ -31,13 +30,11 @@
 
 
 /* A partir daqui a estilização vai para a page root */
-
-#page-root div a{
+#page-root .content a{
     display: flex;
-    height: 24px;
 }
 
-#page-root div a span {
+#page-root .content a span {
     margin-right: 10px;
     background-image: url("../Assets/arrow-left.svg");
 
@@ -46,8 +43,16 @@
     display: flex;
 }
 
-#page-root div div2  {
+#page-root .github {
     display: flex;
-    transform: translateY(500px);
+    margin-top:42%;
     right: 50%;
+}
+
+
+
+#page-root h2{
+    width:50%;
+    color:rgb(121, 52, 52);
+    margin: auto 30%;
 }
