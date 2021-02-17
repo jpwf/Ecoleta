@@ -60,6 +60,19 @@ button.addEventListener("click" ,function(){
             card1 = true
             authenticated()
         }
+    
+        else if(skey==key2){
+            confirm(`Bem vindo "${user2}"`)
+            card2 = true
+            authenticated()
+        }
+        
+        
+    }
+    
+    if(usuario!=user1 && senha!=pass1 && usuario!=user2 && senha!=pass2 ){
+        alert("Login recusado")
+        
     }
     
     
