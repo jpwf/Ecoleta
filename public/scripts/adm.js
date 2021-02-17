@@ -19,12 +19,12 @@ const logins = {
 var user1 = logins.users.user1.name
 var pass1 = parseInt(logins.users.user1.passw)
 var key1 = parseInt(logins.keys.jpwf)
-var card1 = false
+
 
 var user2 = logins.users.user2.name
 var pass2 = parseInt(logins.users.user2.passw)
 var key2 = parseInt(logins.keys.user2)
-var card2 = false
+
 
 function authenticated(){
     setTimeout(() => {
