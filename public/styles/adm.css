@@ -1,3 +1,10 @@
+
+page-adm{
+    width:90%;
+    max-width:1100px;
+    margin:0 auto;
+}
+
 .login{
     width:19.7%;
     height:19.7%;
@@ -21,10 +28,34 @@
     margin-left:70.5%;
 }
 
-    
+
+header{
+    margin-top:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left:40px;
+}
+
+ header button{
+    color: var(--title-color);
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    left:50%;
+    transform: translateX(-70%);
+    background-color: #f0f0f5;
+    border:0;
+ }   
 
 
-
+header button span{
+    margin-right:5px;
+    background-image: url("../Assets/arrow-left.svg");
+    width:20px;
+    height:24px;
+    display:flex;
+}
 
 
 
