@@ -1,7 +1,18 @@
 <header>
     <img src="/Assets/logo.svg" alt="Logomarca">
-    <a href="/">
-        <span></span> 
-        Voltar para home
-    </a>
+    <button id="home">
+        <span>
+        </span>
+        HOME
+    </button>
 </header> 
+
+<script>
+
+    const homeb = document.getElementById("home")
+
+    homeb.addEventListener("click",() =>{
+        window.location = "/"
+    })
+
+</script>
