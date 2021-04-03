@@ -8,7 +8,23 @@
 
 {% include "partials/page-header.html" %}
 
-</div>
+
+<form>
+
+    <fieldset>
+        <div class="user">
+            <label for="username">Usuário</label>
+            <input id="username" paceholder="User: " type="text"/>
+        </div><!--user-->
+        <div class="password">
+            <label for="pass">Senha</label>
+            <input id="pass" type="password" placeholder="Password: "/>
+        </div><!--password-->
+    </fieldset>
+    <button id="validate" type="submit">Send</button>
+
+</form>
+<!-- 
 <div class="login">
     <div class="usuario">
         <input id="username"  placeholder="User:"/>
@@ -19,7 +35,7 @@
     <div class="send">
         <button id="sendb">Send</button>
     </div>
-</div>
+</div> -->
 
 
 
