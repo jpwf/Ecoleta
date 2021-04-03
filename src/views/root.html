@@ -1,14 +1,15 @@
 {% extends "layout.html" %}
 
+{% extends "layout.html" %}
 {% set pageId = "page-root" %}
 
-{% block styles %}
-    <link rel="stylesheet" href="/styles/adm.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
-{% endblock styles %}
+    {% block styles %}
+        <link rel="stylesheet" href="/styles/adm.css">
+        <link rel="stylesheet" href="/styles/responsive.css">
+    {% endblock styles %}
 
 {% block content %}
-        
+            
 
 
     {% include "partials/page-header.html" %}
@@ -17,7 +18,7 @@
 
 
             <div class="github">
-                <a href="https://github.com/jpwf" target="null">Deseja ver outros projetos de jpwf?</a>
+               <button id="githubway">Gostaria de ver outros trabalhos do jpwf?</button>
             </div>
     </div>
 
@@ -25,3 +26,14 @@
 
         
 {% endblock content %}
+
+{% block scripts %}
+    <script>
+
+        const githubway = document.getElementById("githubway")
+        githubway.addEventListener("click", () =>{
+            window.open("https://github.com/jpwf")
+        })
+
+    </script>
+{% endblock scripts %}
