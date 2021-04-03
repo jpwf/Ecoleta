@@ -60,19 +60,7 @@ header button span{
 
 
 
-/* A partir daqui a estilização vai para a page root */
-#page-root .content a{
-    display: flex;
-}
 
-#page-root .content a span {
-    margin-right: 10px;
-    background-image: url("../Assets/arrow-left.svg");
-
-    width: 20px;
-    height: 24px;
-    display: flex;
-}
 
 #page-root .github {
     display: flex;
@@ -80,10 +68,14 @@ header button span{
     right: 50%;
 }
 
-
+#page-root .github button{
+    border:0;
+    
+}
 
 #page-root h2{
     width:50%;
     color:rgb(121, 52, 52);
     margin: auto 30%;
 }
+
