@@ -1,8 +1,9 @@
 const buttonsearch = document.querySelector("#page-home main button")
 const modal = document.querySelector("#modal")
-const close = document.querySelector("#modal header a")
+const close = document.querySelector("#modal header button")
 const admway = document.getElementById("admb")
 const createpoint = document.getElementById("create-point")
+
 
 
 
