@@ -32,21 +32,6 @@ function authenticated(){
     }, 500);
 }
 
-function skey(){
-    
-}
-
-
-// function invasor(){
-//     document.write("invasor")
-//     setTimeout(() =>{
-//         window.location="/blocked"
-//         }, 500)
-// }
-
-
-
-
 
 
 const validate = (event) =>{
