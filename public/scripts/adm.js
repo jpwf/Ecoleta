@@ -14,7 +14,7 @@ const logins = {
         jpwf:4321,
         user2:7890
     }  
-        }
+}
 
 var user1 = logins.users.user1.name
 var pass1 = parseInt(logins.users.user1.passw)
@@ -32,51 +32,37 @@ function authenticated(){
     }, 500);
 }
 
-function skey(){
-    
-}
-
-function invasor(){
-    document.write("invasor")
-    setTimeout(() =>{
-        window.location="/blocked"
-        }, 500)
-}
 
 
+const validate = (event) =>{
+    let enter = event.keyCode;
+    if(enter==13){
 
-button = document.getElementById("sendb")
+        var usuario = document.getElementById("username").value
+        var senha = document.getElementById("pass").value
+        if (usuario == user1 && senha == pass1 || usuario == user2 && senha == pass2) {
+
+            skey = prompt("Chave secreta :")
+            if (skey == key1) {
+                confirm(`Bem vindo "${user1}"`)
+                card1 = true
+                authenticated()
+            }
+
+            else if (skey == key2) {
+                confirm(`Bem vindo "${user2}"`)
+                card2 = true
+                authenticated()
+            }
 
 
-    
-button.addEventListener("click" ,function(){
-    var usuario = document.getElementById("username").value;
-    var senha = document.getElementById("pass").value;
-    if(usuario==user1 && senha==pass1 || usuario==user2 && senha==pass2){
-        
-        skey = prompt("Chave secreta :")
-        if(skey==key1){
-            confirm(`Bem vindo "${user1}"`)
-            card1 = true
-            authenticated()
         }
-    
-        else if(skey==key2){
-            confirm(`Bem vindo "${user2}"`)
-            card2 = true
-            authenticated()
+
+        if (usuario != user1 && senha != pass1 && usuario != user2 && senha != pass2) {
+            alert("Login recusado")
+            window.location = "/"
+
         }
-        
-        
-    }
-    
-    if(usuario!=user1 && senha!=pass1 && usuario!=user2 && senha!=pass2 ){
-        alert("Login recusado")
-        
-    }
-    
-    
-})
-
-
+}}
+document.body.onkeypress = validate;
 

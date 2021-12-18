@@ -15,7 +15,8 @@ server.use(express.urlencoded({ extended: true }))
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
     express: server,
-    noCache: true
+    noCache: true,
+    watch: true
 })
 
 // configurar caminhos da minha aplicação
@@ -126,8 +127,11 @@ server.get("/blocked", (req, res) =>{
     return res.render("blocked.html")
 })
 
-
+const port = 4000
 
 // ligar o servidor
-server.listen(5000)
+server.listen(port, () =>{
+    console.log(`Server running on port: ${port} `)
+})
+
 
