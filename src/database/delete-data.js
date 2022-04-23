@@ -9,17 +9,13 @@ module.exports = db
 
 // utilizar o objeto de banco de dados para nossas operações
 
+// 4- deletar dados da tabela
 db.serialize(() => {
 
-
-
-    // 4- deletar dados da tabela
-
-    db.run(`DELETE FROM places WHERE id = ?`, [], function(err){
-        if (err) {
-            return console.log(err)
-        }
+    db.run(`DELETE FROM places WHERE id = ?`, [44], 
         console.log("Registro deletado com sucesso")
 
-    })
-}) 
+    )
+
+})
+   

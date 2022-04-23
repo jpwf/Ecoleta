@@ -31,7 +31,7 @@ function getcities(event) {
     stateInput.value = event.target.options[indexSS].text
 
 
-
+//código sendo estudado a partir daqui
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufvalue}/municipios`
     citiyselect.innerHTML = "<option value>Selecione a cidade</option>"
     citiyselect.disabled = true
