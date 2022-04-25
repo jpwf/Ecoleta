@@ -70,7 +70,8 @@ header button span{
 
 #page-root .github button{
     border:0;
-    
+    font-size:20px;
+    margin-top:-2%;
 }
 
 #page-root h2{
