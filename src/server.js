@@ -7,7 +7,7 @@ const db = require("./database/db.js")
 
 // confirugrar pasta pública
 server.use(express.static("public"))
-// habilitar p uso do rq.body na nossa aplicação
+// habilitar o uso do rq.body na nossa aplicação
 server.use(express.urlencoded({ extended: true }))
 
 // utilizando template engine
@@ -15,7 +15,8 @@ server.use(express.urlencoded({ extended: true }))
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
     express: server,
-    noCache: true
+    noCache: true,
+    watch: true
 })
 
 // configurar caminhos da minha aplicação
@@ -28,6 +29,7 @@ server.get("/", (req, res) => {
 
 server.get("/create-point", (req, res) => {
     // console.log(req.query)
+    
     return res.render("create-point.html")
 
     // req.query: query strings da nossa url
@@ -117,10 +119,19 @@ server.get("/adm", (req, res) => {
     return res.render("adm.html")
 })
 
-server.get("/delete-data", (req, res) => {
-    return res.render("delete-data.html")
+server.get("/root", (req, res) =>{
+    return res.render("root.html")
 })
 
+server.get("/blocked", (req, res) =>{
+    return res.render("blocked.html")
+})
+
+const port = 4000
+
 // ligar o servidor
-server.listen(4000)
+server.listen(port, () =>{
+    console.log(`Server running on port: ${port} `)
+})
+
 

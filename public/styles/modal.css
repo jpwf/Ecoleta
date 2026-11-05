@@ -20,7 +20,7 @@
 
 #modal .content {
     color: white;
-
+    font-weight: 700;
     width: 420px;
 
 }
@@ -31,15 +31,22 @@
     justify-content: space-between;
 }
 
-#modal .header  a  {
+#modal  button {
+    display:flex;
+    color:white;
+    font-size:120%;
+    align-items: center;
+    background-color:#0E0A14ef;
+    border:0;
+}
+#modal button span{
     background-image: url("../Assets/x.svg");
-
-    width:20px;
-    height: 20px;
-
+    width:18px;
+    height: 18px;
+    margin-bottom:10%;
     display: flex;
 
-    font-size: 0.01px;
+    
 }
 
 #modal .header h1 {
@@ -85,14 +92,20 @@
     background-color: var(--primary-color);
 
     border: 0;
-
+    align-items:center;
     border-radius:0 8px 8px 0;
-   
+    text-align:center;
+    display:flex;
+}
+
+#modal form button img{
+    margin-left:30%;
 }
 
 #modal form button:hover {
     background-color: #2fb85c;
 }
+
 
 /* para a imagem do modal pointed-created */
 

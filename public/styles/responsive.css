@@ -35,7 +35,11 @@
 
         #page-create-point .field-group .field + .field{
            margin-left: 0;}} 
-@media(width: 425px){
+@media(max-width: 425px){
+            #page-home .two a{
+                top:100%;
+                height:5px;
+            }
             #page-home header  .two a span {
                 width: 25px;}
             #page-home header .one a{
@@ -49,7 +53,10 @@
             width: 28px;}
         #page-home header .one a{
             transform: translateX(-60px);}}
-@media(width: 320px){
+@media(max-width: 320px){
+    #pag-home .two a{
+        top:40%;
+    }
     #page-home header .two a span{
         width: 31px;}
     #page-home header .one a{
@@ -70,9 +77,7 @@
                 transform: translateX(-70%);}}
 @media(max-height:  667px){ 
                 #page-home header .two a {
-        
-                   
-                    bottom: -30px;
+                    top:120%;
                     height: 5px;
                 }
                
@@ -144,3 +149,8 @@
     align-items: center;
     text-align: center;}
 
+@media(min-width:100px) and (min-height:175px){
+    #page-home .two a{
+        bottom:10%;
+    }
+}

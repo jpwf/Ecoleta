@@ -14,22 +14,24 @@ page-create-point {
 
 }
 
-#page-create-point header a{
+#page-create-point header button{
     color: var(--title-color);
     font-weight: bold;
     display:flex;
     align-items: center;
     left: 50%;
-    transform: translateX(-20%);
+    transform: translateX(-70%);
+    background-color: #f0f0f5;
+    border:0;
+    
 }
 
-#page-create-point header a span {
-    margin-right: 5px;
+#page-create-point header button span {
+    margin-right:5px;
     background-image: url("../Assets/arrow-left.svg");
-
-    width: 20px;
-    height: 24px;
-    display: flex;
+    width:20px;
+    height:24px;
+    display:flex;
 }
 
 form{

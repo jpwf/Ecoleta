@@ -3,28 +3,50 @@
 
 {% block styles %}
     <link href="/styles/adm.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
 {% endblock styles %}
 
+{% include "partials/page-header.html" %}
+
+
+<form>
+
+    <fieldset>
+        <div class="user">
+            <label for="username">Usuário</label>
+            <input id="username" placeholder="User " type="text"/>
+        </div><!--user-->
+        <div class="password">
+            <label for="pass">Senha</label>
+            <input id="pass" type="password" placeholder="Password "/>
+        </div><!--password-->
+    </fieldset>
+
+</form>
+<!-- 
 <div class="login">
     <div class="usuario">
-        <input id="user" placeholder="User:"/>
+        <input id="username"  placeholder="User:"/>
     </div>
     <div class="password">
-        <input id="pass" placeholder="Password:"/>
+        <input id="pass" type="password" placeholder="Password:"/>
     </div>
     <div class="send">
-        <button id="validate" >Send</button>
+        <button id="sendb">Send</button>
     </div>
-</div>
+</div> -->
 
 
 
+                <!-- Em teste -->
+<!-- {% block modal %}
+    {% if saved %}
 
-
-
-
-
+        
+    
+    {% endif %}
+{% endblock modal %} -->
 
 {% block scripts %}
-    <script src="../scripts/adm.js"></script>
+    <script src="/scripts/adm.js"></script>
 {% endblock scripts %}
